@@ -19,22 +19,22 @@ For example, the interpolation constraint conditions are shown in the following 
         <td>0.3</td>
     </tr>
     <tr>
-        <td>$f′(x_i)$</td>
+        <td>${f}′(x_i)$</td>
         <td>-</td>
         <td>-0.1</td>
         <td>1</td>
     </tr>
     <tr>
-        <td>$f′′(x_i)$</td>
+        <td>${f}′′(x_i)$</td>
         <td>-</td>
         <td>-</td>
         <td>-0.5</td>
     </tr>
 </table>
 
-<div style="text-align:center;">
-<h4>Table 1: Interpolation Constraint Conditions</h4>
-</div>
+<p align="center">
+    Table 1: Interpolation Constraint Conditions
+</p>
 
 input:
 6
@@ -46,11 +46,66 @@ input:
 * The third line represents the constraints corresponding to the interpolation nodes, and the number of constraints is specified by the number in the first line. If duplicate nodes appear in the second line of data, it indicates that the constraint at a node is determined by Equation (1) and is sorted in increasing order of derivative order.
 
 The algorithm is required to design to construct the divided difference table of Newton's interpolation formula with repetitions as shown below. Table 2 presents the calculated Newton's divided differences (rounded to 4 decimal places).
-| Table 2: Interpolation Constraint Conditions |
-| $f(x^i)$ | $D^f$ | $D^2f$ | $D^3f$ | $D^4f$ | $D^5f$ |
-| 0.5000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
-| 2.5000 | 2.0000 | 0.0000 | 0.0000 | 0.0000 | 0.0000 |
-| 2.5000 | -0.1000 | -2.1000 | 0.0000 | 0.0000 | 0.0000 |
-| 0.3000 | -1.4667 | -0.9111 | 0.4756 | 0.0000 | 0.0000 |
-| 0.3000 | 1.0000 | 1.6444 | 1.7037 | 0.4913 | 0.0000 |
-| 0.3000 | 1.0000 | -0.2500 | -1.2630 | -1.9778 | -0.9876 |
+
+<table align="center">
+    <tr>
+        <td>$f(x_i)$</td>
+        <td>$Df$</td>
+        <td>$D^2f$</td>
+        <td>$D^3f$</td>
+        <td>$D^4f$</td>
+        <td>$D^5f$</td>
+    </tr>
+    <tr>
+        <td>0.5000</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+    </tr>
+    <tr>
+        <td>2.5000</td>
+        <td>2.0000</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+    </tr>
+    <tr>
+        <td>2.5000</td>
+        <td>-0.1000</td>
+        <td>-2.1000</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+    </tr>
+    <tr>
+        <td>0.3000</td>
+        <td>-1.4667</td>
+        <td>-0.9111</td>
+        <td>0.4756</td>
+        <td>0.0000</td>
+        <td>0.0000</td>
+    </tr>
+    <tr>
+        <td>0.3000</td>
+        <td>1.0000</td>
+        <td>1.6444</td>
+        <td>1.7037</td>
+        <td>0.4913</td>
+        <td>0.0000</td>
+    </tr>
+    <tr>
+        <td>0.3000</td>
+        <td>1.0000</td>
+        <td>-0.2500</td>
+        <td>-1.2630</td>
+        <td>-1.9778</td>
+        <td>-0.9876</td>
+    </tr>
+</table>
+
+<p align="center">
+    Table 2: Interpolation Constraint Conditions
+</p>
