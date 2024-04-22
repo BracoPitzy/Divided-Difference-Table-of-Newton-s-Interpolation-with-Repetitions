@@ -5,11 +5,36 @@ SCU College of Mathematics Numerical Analysis Assignment: Construct a divided di
 Construct a divided difference table of Newton's interpolation formula with repetitions based on the given interpolation constraint conditions. The interpolation polynomial $p(x)$ satisfies the interpolation constraints at each node $x_k$:
 $$p^{(k)}(x_k)=f^{(k)}(x_k),k=0,1,2,\cdots,s.    (1)$$
 For example, the interpolation constraint conditions are shown in the following table:
-| Table 1: Interpolation Constraint Conditions |
-|$x_i$ | 1 | 2 | 3.5 |
-|$f(x_i)$ | 0.5 | 2.5 | 0.3 |
-|$f′(x_i)$ | - | -0.1 | 1 |
-|$f′′(x_i)$ | - | - | -0.5 |
+<table align="center">
+    <tr>
+        <td>$x_i$</td>
+        <td>1</td>
+        <td>2</td>
+        <td>3.5</td>
+    </tr>
+    <tr>
+        <td>$f(x_i)$</td>
+        <td>0.5</td>
+        <td>2.5</td>
+        <td>0.3</td>
+    </tr>
+    <tr>
+        <td>$f′(x_i)$</td>
+        <td>-</td>
+        <td>-0.1</td>
+        <td>1</td>
+    </tr>
+    <tr>
+        <td>$f′′(x_i)$</td>
+        <td>-</td>
+        <td>-</td>
+        <td>-0.5</td>
+    </tr>
+</table>
+
+<div style="text-align:center;">
+<h4>Table 1: Interpolation Constraint Conditions</h4>
+</div>
 
 input:
 6
