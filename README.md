@@ -33,7 +33,7 @@ For example, the interpolation constraint conditions are shown in the following 
 </table>
 
 <p align="center">
-    Table 1: Interpolation Constraint Conditions
+    <b>Table 1: Interpolation Constraint Conditions</b>
 </p>
 
 input:  
@@ -107,19 +107,19 @@ The algorithm is required to design to construct the divided difference table of
 </table>
 
 <p align="center">
-    Table 2: Interpolation Constraint Conditions
+   <b>Table 2: Interpolation Constraint Conditions</b>
 </p>
 
 # File Overview
-* `hw3_newton.py`: This code is an interface for submitting and validating Python code on the Newton Online Judging platform at [numecode](http://moodle.numecode.com/).
+* `hw3_newton.py`: This code is an interface for submitting and validating Python code on the Newton Online Judging platform at [http://moodle.numecode.com/](http://moodle.numecode.com/).
   * `inputdata ()`:
     * Functionality: This function inputdata implements the input of test data.
-    * Return Values: $x$ retrieves an array of nodes arranged in increasing order; $y$ retrieves an array of constraint conditions corresponding to the nodes in $x$.
+    * Return Values: `x` retrieves an array of nodes arranged in increasing order; `y` retrieves an array of constraint conditions corresponding to the nodes in `x`.
   * `outputdata (s)`:
     * Functionality: This function outputdata implements the formatted output of Newton's divided differences.
-    * Parameter Description: The input parameter $s$ is the matrix form of the Newton's divided difference table saved as Table 2.
+    * Parameter Description: The input parameter `s` is the matrix form of the Newton's divided difference table saved as Table 2.
   * `DividedDiffWithRepetitions (x, y)`:
     * Functionality: This function calculates the divided differences using the Newton's interpolation formula with repetitions.
-    * Parameter Description: The input parameter x is an array of nodes arranged in increasing order, including repetitions; the input parameter $y$ is an array of constraint conditions corresponding to the nodes in $x$, both arrays $x$ and $y$ have the same length.
+    * Parameter Description: The input parameter `x` is an array of nodes arranged in increasing order, including repetitions; the input parameter `y` is an array of constraint conditions corresponding to the nodes in `x`, both arrays `x` and `y` have the same length.
     * Return Value: The return value `coeff` is the result of the divided differences saved in the matrix form as shown in Table 2.
 * `DividedDiffWithRepetitions.py`: Code for Calculating the divided differences using the Newton's interpolation formula with repetitions.
